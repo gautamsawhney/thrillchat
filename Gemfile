@@ -7,6 +7,9 @@ gem 'rails', '3.2.16'
 
 gem 'sqlite3'
 gem 'nifty-generators'
+gem "thin", "~> 1.6.1"
+gem "faye", "~> 1.0.1"
+gem 'jquery-rails'
 
 
 
@@ -22,7 +25,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

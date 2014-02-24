@@ -1,9 +1,10 @@
 class MessagesController < ApplicationController
-  def index
-  	@messages = Messsage.all
+   def index
+    @messages = Message.all
   end
-
-  def create 
-  	@message = Messsage.create!(params[:messsage])
+  
+ def create
+    @message = Message.create!(params[:message])
+    redirect_to :action => 'create', :format =>'js'
   end
 end

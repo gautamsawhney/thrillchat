@@ -1,5 +1,7 @@
 Thrillchat::Application.routes.draw do
-  get "messages/index"
+  
+   resources :messages
+   root :to => 'messages#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
